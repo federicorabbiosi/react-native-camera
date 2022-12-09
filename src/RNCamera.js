@@ -12,7 +12,6 @@ import {
   StyleSheet,
   PermissionsAndroid,
 } from 'react-native';
-import { ViewPropTypes } from 'deprecated-react-native-prop-types';
 import type { FaceFeature } from './FaceDetector';
 
 const Rationale = PropTypes.shape({
@@ -393,7 +392,7 @@ export default class Camera extends React.Component<PropsType, StateType> {
   };
 
   static propTypes = {
-    ...ViewPropTypes,
+    //...ViewPropTypes,
     zoom: PropTypes.number,
     useNativeZoom: PropTypes.bool,
     maxZoom: PropTypes.number,
